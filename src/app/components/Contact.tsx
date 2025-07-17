@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Phone, MapPin, ArrowRight, Send, CheckCircle, User, Mail, GraduationCap, Code, Clock, DollarSign, MessageSquare } from 'lucide-react'
+import { Phone, MapPin, ArrowRight, Send, CheckCircle, User, Mail, GraduationCap, Code, Clock, MessageSquare } from 'lucide-react'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -38,7 +38,7 @@ export default function Contact() {
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(form as any).toString()
+        body: new URLSearchParams(form as FormData).toString()
       })
 
       if (response.ok) {
@@ -78,7 +78,7 @@ export default function Contact() {
           </h2>
           
           <p className="text-gray-400 max-w-md mx-auto">
-            Let's bring your project vision to life
+            Let&apos;s bring your project vision to life
           </p>
         </div>
 
@@ -147,7 +147,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-white mb-3">Thank You!</h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Your project inquiry has been submitted successfully. 
-                We'll review your requirements and get back to you within 24 hours with a detailed proposal.
+                We will review your requirements and get back to you within 24 hours with a detailed proposal.
               </p>
               <button 
                 onClick={() => setIsSubmitted(false)}
@@ -320,7 +320,7 @@ export default function Contact() {
                 <div className="text-center pt-4 border-t border-gray-800/50">
                   <p className="text-gray-500 text-xs">
                     By submitting this form, you agree to our privacy policy. 
-                    We'll only use your information to respond to your inquiry.
+                    We will only use your information to respond to your inquiry.
                   </p>
                 </div>
               </form>
