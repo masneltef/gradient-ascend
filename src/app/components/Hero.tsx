@@ -102,7 +102,7 @@ export default function Hero() {
               
               <div className="absolute top-1/2 -left-8 md:-left-12 transform -translate-y-1/2 bg-black/80 border border-orange-500/20 rounded-lg px-2 md:px-3 py-1.5 md:py-2">
                 <div className="text-center">
-                  <div className="text-sm md:text-lg font-bold text-orange-400">48H</div>
+                  <div className="text-sm md:text-lg font-bold text-orange-400">FAST</div>
                   <div className="text-xs text-gray-500">DELIVERY</div>
                 </div>
               </div>
